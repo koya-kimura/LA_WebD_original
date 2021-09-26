@@ -1,4 +1,177 @@
+@font-face {
+  font-family: "Gkktt";
+  src: url(../fonts/851Gkktt.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url(../fonts/NotoSans-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
+
+/* ヘッダー */
+header {
+    height: 100vh;
+    background-image: url("../image/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/* セクション共通 */
+section h2 {
+    font-size: 72px;
+    letter-spacing: 8px;
+    font-family: "Gkktt";
+    text-align: center;
+    padding: 130px 0;
+}
+
+/* セクション1：「ラジオの魅力」 */
+#charm-section {
+    padding-bottom: 110px;
+    position: relative;
+}
+
+#charm-section p {
+    font-size: 20px;
+    font-family: "NotoSans";
+    font-style: bold;
+    text-align: center;
+    line-height: 42px;
+    margin-bottom: 50px;
+}
+
+.shape1 {
+    position: absolute;
+    top: 175px;
+    left: -70px;
+}
+
+.shape2 {
+    position: absolute;
+    top: 635px;
+    left: 100px;
+}
+
+.shape3 {
+    position: absolute;
+    top: 770px;
+    left: 60px;
+}
+
+.shape4 {
+    position: absolute;
+    top: 190px;
+    left: 1360px;
+}
+
+.shape5 {
+    position: absolute;
+    top: 690px;
+    left: 1240px;
+}
+
+/* セクション2：「番組紹介」 */
+#program-section h2 {
+    color: #fff;
+}
+
+#program-section {
+    background-color: #397368;
+}
+
+.program-wrapper {
+    width: 1064px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.program {
+    width: 226px;
+    height: 226px;
+    margin: 25px 20px;
+    position: relative;
+}
+
+.program img {
+    width: 226px;
+}
+
+.program p {
+    position: absolute;
+    bottom: 27px;
+    left: 23px;
+    display: inline-block;
+    font-family: "Gkktt";
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: #A8A7A7;
+    opacity: 0.85;
+}
+
+/* セクション3：「こんな時はラジオに限る」 */
+.howto-wrapper {
+    display: flex;
+    padding-bottom: 160px;
+    margin: 0 auto;
+    width: 1122px;
+}
+
+.howto-content {
+    background-color: #397368;
+    width: 292px;
+    height: 445px;
+    text-align: center;
+    margin: 0 41px;
+    box-shadow: 14px 10px 4px #DBE139;
+}
+
+.howto-content h3 {
+    color: #fff;
+    margin-top: 76px;
+    font-size: 33px;
+    letter-spacing: 4px;
+}
+
+.howto-content img {
+    width: 175px;
+    margin-top: 29px;
+}
+
+.howto-content p {
+    color: #fff;
+    margin-top: 39px;
+    font-size: 29px;
+    letter-spacing: 3px;
+}
+
+.border-text {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 10px;
+}
+
+/* フッター */
+footer {
+    background-color: #397368;
+    text-align: center;
+    height: 90px;
+    font-size: 31px;
+    color: #fff;
+    font-family: "Gkktt";
+    padding-top: 40px;
+}
+
+
+.copy-right {
+    font-family: serif;
+}
+
+/* レスポンシブ */
