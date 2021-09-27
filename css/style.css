@@ -105,16 +105,23 @@ section h2 {
     width: 226px;
 }
 
-.program p {
+.program-text {
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     bottom: 27px;
-    left: 23px;
-    display: inline-block;
-    font-family: "Gkktt";
-    padding: 20px 50px;
+    width: 213px;
+    height: 54px;
     border-radius: 20px;
     background-color: #A8A7A7;
     opacity: 0.85;
+}
+
+.program-text p {
+    letter-spacing: 3px;
+    font-family: "Gkktt";
+    text-align: center;
+    line-height: 54px;
 }
 
 /* セクション3：「こんな時はラジオに限る」 */
@@ -162,11 +169,14 @@ section h2 {
 footer {
     background-color: #397368;
     text-align: center;
-    height: 90px;
+    height: 70px;
     font-size: 31px;
     color: #fff;
     font-family: "Gkktt";
-    padding-top: 40px;
+}
+
+footer p {
+    line-height: 70px;
 }
 
 
