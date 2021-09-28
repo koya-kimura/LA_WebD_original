@@ -209,6 +209,11 @@ section h2 {
     transform: translateX(-50%);
     text-align: center;
     background-color: rgb(153, 101, 101);
+    display: none;
+}
+
+.program-image:hover + .program- {
+    display: block;
 }
 
 .program-title {
