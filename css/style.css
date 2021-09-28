@@ -363,4 +363,8 @@ footer p {
         top: 70%;
         right: 0;
     }
+
+    .howto-wrapper {
+        padding-bottom: 80px;
+    }
 }
