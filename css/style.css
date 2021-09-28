@@ -245,7 +245,7 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 130px;
+    padding-bottom: 110px;
     margin: 0 auto;
     width: 78%;
 }
@@ -255,7 +255,7 @@ section h2 {
     width: 300px;
     text-align: center;
     margin: 0 3.66%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     box-shadow: 14px 10px 4px #DBE139;
 }
 
@@ -274,7 +274,7 @@ section h2 {
 .howto-content p {
     color: #fff;
     margin-top: 39px;
-    margin-bottom: 76px;
+    margin-bottom: 110px;
     font-size: 2.9rem;
     letter-spacing: 3px;
     font-family: "NotoSans";
@@ -302,6 +302,7 @@ footer p {
 .copy-right {
     font-family: serif;
 }
+
 
 /* レスポンシブ */
 @media screen and (max-width: 480px) {
@@ -365,6 +366,14 @@ footer p {
     }
 
     .howto-wrapper {
-        padding-bottom: 80px;
+        padding-bottom: 60px;
+    }
+
+    .howto-content h3 {
+        margin-top: 45px;
+    }
+
+    .howto-content p {
+        margin-bottom: 60px;
     }
 }
