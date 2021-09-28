@@ -155,8 +155,8 @@ section h2 {
 }
 
 .program {
-    width: 226px;
-    height: 226px;
+    width: 220px;
+    height: 220px;
     margin: 35px 40px;
     position: relative;
     background-image: url(../image/white-circle.png);
@@ -204,7 +204,7 @@ section h2 {
 .program-intro {
     position: absolute; 
     width: 100%;
-    top: 20%;
+    top: 17%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -351,22 +351,16 @@ footer p {
     .shape4-sp {
         position: absolute;
         display: block;
-        width: 21vw;
-        top: 23%;
+        width: 19vw;
+        top: 19%;
         right: 0;
     }
 
     .shape5-sp {
         position: absolute;
         display: block;
-        width: 20vw;
-        top: 68%;
+        width: 19vw;
+        top: 70%;
         right: 0;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #charm-section {
-        background-color: rgb(255, 0, 0);
     }
 }
