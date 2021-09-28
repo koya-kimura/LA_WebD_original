@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Gkktt";
   src: url(../fonts/851Gkktt.ttf) format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
@@ -12,6 +13,10 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 60%;
 }
 
 /* ローディング画面 */
@@ -52,16 +57,16 @@
 /* ヘッダー */
 header {
     height: 100vh;
-    background-image: url("../image/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    position: relative;
+    background-image: url(../image/hero.jpg);
 }
 
 /* セクション共通 */
 section h2 {
-    font-size: 72px;
-    letter-spacing: 8px;
+    font-size: 7.2rem;
+    letter-spacing: 0.8rem;
     font-family: "Gkktt";
     text-align: center;
     padding: 130px 0;
@@ -70,46 +75,52 @@ section h2 {
 /* セクション1：「ラジオの魅力」 */
 #charm-section {
     padding-bottom: 110px;
+    width: 100%;
     position: relative;
 }
 
 #charm-section p {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "NotoSans";
     font-style: bold;
     text-align: center;
-    line-height: 42px;
+    line-height: 4.2rem;
     margin-bottom: 50px;
 }
 
 .shape1 {
+    width: 29vw;
     position: absolute;
-    top: 175px;
-    left: -70px;
+    top: 14%;
+    left: -5vw;
 }
 
 .shape2 {
+    width: 12vw;
     position: absolute;
-    top: 635px;
-    left: 100px;
+    top: 54%;
+    left: 7vw;
 }
 
 .shape3 {
+    width: 20vw;
     position: absolute;
-    top: 770px;
-    left: 60px;
+    top: 66%;
+    left: 4vw;
 }
 
 .shape4 {
+    width: 22vw;
     position: absolute;
-    top: 190px;
-    left: 1360px;
+    top: 16%;
+    right: 0;
 }
 
 .shape5 {
+    width: 16vw;
     position: absolute;
-    top: 690px;
-    left: 1240px;
+    top: 59%;
+    right: 9vw;
 }
 
 /* セクション2：「番組紹介」 */
@@ -119,80 +130,142 @@ section h2 {
 
 #program-section {
     background-color: #397368;
+    width: 100%;
 }
 
 .program-wrapper {
-    width: 1064px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 150px;
 }
 
 .program {
-    width: 226px;
-    height: 226px;
-    margin: 25px 20px;
+    width: 250px;
+    height: 250px;
+    margin: 35px 40px;
     position: relative;
+    background-image: url(../image/white-circle.png);
+    background-size: cover;
 }
 
 .program img {
-    width: 226px;
+    width: 100%;
+}
+
+.program-image {
+    transition:  0.4s;
+}
+
+.program-image:hover {
+    opacity: 0.2;
 }
 
 .program-text {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    bottom: 27px;
-    width: 213px;
-    height: 54px;
+    bottom: 12%;
+    width: 95%;
+    height: 24%;
     border-radius: 20px;
     background-color: #A8A7A7;
     opacity: 0.85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.45s;
 }
 
 .program-text p {
     letter-spacing: 3px;
+    font-size: 17px;
     font-family: "Gkktt";
-    text-align: center;
-    line-height: 54px;
 }
 
+.program-image:hover + .program-text {
+    opacity: 0;
+}
+
+.program-intro {
+    position: absolute; 
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgb(153, 101, 101);
+}
+
+.program-title {
+    display: table;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.program-title h4 {
+    font-size: 19px;
+    letter-spacing: 3px;
+    font-family: "Gkktt";
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 24px;
+}
+
+.program-intro p {
+    font-size: 15px;
+    margin: 7px 0;
+    font-family: "NotoSans";
+    letter-spacing: 1px;
+}
+
+
 /* セクション3：「こんな時はラジオに限る」 */
+#howto-section {
+    width: 100%;
+}
+
 .howto-wrapper {
     display: flex;
-    padding-bottom: 160px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 130px;
     margin: 0 auto;
-    width: 1122px;
+    width: 78%;
 }
 
 .howto-content {
     background-color: #397368;
-    width: 292px;
-    height: 445px;
+    width: 300px;
     text-align: center;
-    margin: 0 41px;
+    margin: 0 3.66%;
+    margin-bottom: 40px;
     box-shadow: 14px 10px 4px #DBE139;
 }
 
 .howto-content h3 {
     color: #fff;
-    margin-top: 76px;
-    font-size: 33px;
+    margin-top: 80px;
+    font-size: 3.3rem;
     letter-spacing: 4px;
 }
 
 .howto-content img {
-    width: 175px;
+    width: 60%;
     margin-top: 29px;
 }
 
 .howto-content p {
     color: #fff;
     margin-top: 39px;
-    font-size: 29px;
+    margin-bottom: 76px;
+    font-size: 2.9rem;
     letter-spacing: 3px;
+    font-family: "NotoSans";
 }
 
 .border-text {
@@ -220,3 +293,16 @@ footer p {
 }
 
 /* レスポンシブ */
+@media screen and (max-width: 480px) {
+    header {
+        background-image: url(../image/hero-sp.jpg);
+    }
+
+    section h2 {
+        font-size: 4.5rem;
+    }
+
+    #howto-section h2 {
+        font-size: 3rem;
+    }
+}
