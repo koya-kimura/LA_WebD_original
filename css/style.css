@@ -19,6 +19,10 @@ html {
     font-size: 60%;
 }
 
+.br-sp {
+    display: none;
+}
+
 /* ローディング画面 */
 #loading {
   width: 100vw;
@@ -151,8 +155,8 @@ section h2 {
 }
 
 .program {
-    width: 250px;
-    height: 250px;
+    width: 226px;
+    height: 226px;
     margin: 35px 40px;
     position: relative;
     background-image: url(../image/white-circle.png);
@@ -285,7 +289,7 @@ section h2 {
 footer {
     background-color: #397368;
     text-align: center;
-    font-size: 31px;
+    font-size: 25px;
     color: #fff;
     font-family: "Gkktt";
 }
@@ -301,6 +305,14 @@ footer p {
 
 /* レスポンシブ */
 @media screen and (max-width: 480px) {
+    .br-sp {
+        display: block;
+    }
+
+    section h2 {
+        padding: 100px 0;
+    }
+
     header {
         background-image: url(../image/hero-sp.jpg);
     }
@@ -351,8 +363,10 @@ footer p {
         top: 68%;
         right: 0;
     }
+}
 
-    #howto-section h2 {
-        font-size: 3rem;
+@media screen and (max-width: 320px) {
+    #charm-section {
+        background-color: rgb(255, 0, 0);
     }
 }
