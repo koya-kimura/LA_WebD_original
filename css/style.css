@@ -123,6 +123,14 @@ section h2 {
     right: 9vw;
 }
 
+.shape4-sp {
+    display: none;
+}
+
+.shape5-sp {
+    display: none;
+}
+
 /* セクション2：「番組紹介」 */
 #program-section h2 {
     color: #fff;
@@ -277,7 +285,6 @@ section h2 {
 footer {
     background-color: #397368;
     text-align: center;
-    height: 70px;
     font-size: 31px;
     color: #fff;
     font-family: "Gkktt";
@@ -298,8 +305,51 @@ footer p {
         background-image: url(../image/hero-sp.jpg);
     }
 
+    #charm-section p {
+        font-size: 1.7rem;
+        margin-bottom: 40px;
+    }
+
     section h2 {
         font-size: 4.5rem;
+    }
+
+    .shape1 {
+        display: none;
+    }
+
+    .shape2 {
+        width: 24vw;
+        top: 54%;
+        left: -12vw;
+    }
+
+    .shape3 {
+        display: none;
+    }
+
+    .shape4 {
+        display: none;
+    }
+
+    .shape5 {
+        display: none;
+    }
+
+    .shape4-sp {
+        position: absolute;
+        display: block;
+        width: 21vw;
+        top: 23%;
+        right: 0;
+    }
+
+    .shape5-sp {
+        position: absolute;
+        display: block;
+        width: 20vw;
+        top: 68%;
+        right: 0;
     }
 
     #howto-section h2 {
