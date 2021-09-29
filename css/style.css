@@ -24,8 +24,12 @@ html {
 }
 
 /* ヘッダー */
-.header {
+.pc-header {
     width: 100%;
+}
+
+.sp-header {
+    display: none;
 }
 
 /* セクション共通 */
@@ -287,6 +291,15 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+    .pc-header {
+        display: none;
+    }
+
+    .sp-header {
+        display: block;
+        width: 100%;
+    }
+
     section h2 {
         padding: 100px 0;
     }
