@@ -23,24 +23,16 @@ html {
     display: none;
 }
 
-/* ローディング画面 */
+/* ローディング */
 #loading {
   width: 100vw;
   height: 100vh;
   transition: all 1s;
-  background-color: #397368;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
-}
-.spinner {
-  width: 100px;
-  height: 100px;
-  margin: 200px auto;
-  background-color: #fff;
-  border-radius: 100%;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
 }
 
 .loaded {
@@ -48,7 +40,7 @@ html {
   visibility: hidden;
 }
 
-/* ローディングアニメーション */
+
 @keyframes sk-scaleout {
   0% {
     transform: scale(0);
@@ -59,12 +51,8 @@ html {
 }
 
 /* ヘッダー */
-header {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../image/hero.jpg);
+.header {
+    width: 100%;
 }
 
 /* セクション共通 */
@@ -159,20 +147,23 @@ section h2 {
     height: 220px;
     margin: 35px 40px;
     position: relative;
-    background-image: url(../image/white-circle.png);
-    background-size: cover;
 }
 
 .program img {
     width: 100%;
 }
 
-.program-image {
-    transition:  0.4s;
+.white-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.program-image:hover {
-    opacity: 0.2;
+.program-image {
+    transition:  0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .program-text {
@@ -197,14 +188,11 @@ section h2 {
     font-family: "Gkktt";
 }
 
-.program-image:hover + .program-text {
-    opacity: 0;
-}
-
 .program-intro {
     position: absolute; 
     width: 100%;
     top: 17%;
+    height: 80px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -234,6 +222,35 @@ section h2 {
     letter-spacing: 1px;
 }
 
+.program-image:hover {
+    opacity: 0.2;
+}
+
+.program-image:hover + .program-text {
+    opacity: 0;
+}
+
+/* .gizi {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 0, 0);
+    opacity: 0.2;
+}
+
+.gizi:hover + .program-intro {
+    display: block;
+}
+
+.gizi:hover + .program-image {
+    opacity: 0.2;
+}
+
+.gizi:hover + .program-text {
+    opacity: 0;
+} */
 
 /* セクション3：「こんな時はラジオに限る」 */
 #howto-section {
@@ -304,11 +321,19 @@ footer p {
 
 
 /* レスポンシブ */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 930px) {
+    .br-tb {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 540px) {
     .br-sp {
         display: block;
     }
+}
 
+@media screen and (max-width: 480px) {
     section h2 {
         padding: 100px 0;
     }
