@@ -169,7 +169,7 @@ section h2 {
 .program-intro {
     position: absolute; 
     width: 100%;
-    top: 17%;
+    top: 15%;
     height: 80px;
     left: 50%;
     transform: translateX(-50%);
@@ -180,7 +180,7 @@ section h2 {
     display: table;
     height: 40px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     text-align: center;
 }
 
