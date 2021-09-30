@@ -111,7 +111,7 @@ section h2 {
 }
 
 .program-wrapper {
-    width: 80%;
+    width: 83%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -120,8 +120,8 @@ section h2 {
 }
 
 .program {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin: 35px 40px;
     position: relative;
 }
@@ -278,9 +278,80 @@ footer p {
 
 
 /* レスポンシブ */
+/* プログラムサイジング用 */
+@media screen and (max-width: 1400px) {
+    .program {
+        width: 180px;
+        height: 180px;
+        margin: 25px 30px;
+    }
+
+    .program-text p {
+        letter-spacing: 2.7px;
+        font-size: 16px;
+    }
+
+    .program-intro {
+        height: 72px;
+    }
+
+    .program-title {
+        height: 36px;
+        margin-bottom: 14px;
+    }
+
+    .program-title h4 {
+        font-size: 15.3px;
+        letter-spacing: 2.7px;
+        line-height: 21.6px;
+    }
+
+    .program-intro p {
+        font-size: 13.5px;
+        margin: 6.3px 0;
+        letter-spacing: 0.9px;
+    }
+}
+
+/* ハウトゥーサイジング用 */
 @media screen and (max-width: 1300px) {
     .howto-wrapper {
         width: 85%;
+    }
+}
+
+/* プログラムサイジング用 */
+@media screen and (max-width: 1160px) {
+    .program {
+        width: 160px;
+        height: 160px;
+        margin: 25px 30px;
+    }
+
+    .program-text p {
+        letter-spacing: 2.3px;
+        font-size: 15px;
+    }
+
+    .program-intro {
+        height: 65px;
+    }
+
+    .program-title {
+        height: 32px;
+        margin-bottom: 11px;
+    }
+
+    .program-title h4 {
+        font-size: 13px;
+        letter-spacing: 2.4px;
+        line-height: 19.5px;
+    }
+
+    .program-intro p {
+        font-size: 12px;
+        margin: 5.5px 0;
+        letter-spacing: 0.8px;
     }
 }
 
